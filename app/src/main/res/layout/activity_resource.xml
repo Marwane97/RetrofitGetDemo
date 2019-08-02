@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Resource.ResourceActivity">
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar"
+        ></include>
+    <TextView
+            android:id="@+id/resourceText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20px"
+            android:gravity="center"
+            android:paddingTop="25px"
+            android:paddingBottom="25px"
+            android:textSize="45px"
+            android:textStyle="italic|bold"
+        android:layout_below="@id/tool_bar"/>
+
+        <ListView
+            android:id="@+id/resourceList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="15px"
+            android:paddingRight="15px"
+            android:layout_below="@id/resourceText"></ListView>
+
+</RelativeLayout>
